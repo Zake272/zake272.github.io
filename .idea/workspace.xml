@@ -5,30 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5da936e-be35-4a7f-9afd-997d35dd7128" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Assignment5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/.env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/controllers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/controllers/order_details.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/controllers/orders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/controllers/recipes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/controllers/resources.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/controllers/sandwiches.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/dependencies/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/dependencies/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/dependencies/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/models/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/models/schemas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/tests/test_orders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +39,8 @@
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/zwill/Downloads/GitHub/zake272.github.io&quot;
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/zwill/Downloads/FinalProject&quot;
   }
 }</component>
   <component name="RecentsManager">
