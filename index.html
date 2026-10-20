@@ -1,57 +1,296 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Personal Webpage | UNC Charlotte</title>
-		<style type="text/css">
-			body {
-				background-color: #ff0000;
-				color: #333333;
-				margin: 0;
-				padding: 0;
-			}
-			#page-wrapper {
-				height: 100%;
-				width: 100%;
-				max-width: 950px;
-				margin: auto;
-			}
-			#logo-wrapper {
-				padding-top: 20px;
-				padding-bottom: 10px;
-				text-align: center;
-				border-bottom: 1px solid #006633;
-			}
-			#content-wrapper {
-				width: 100%;
-				max-width: 950px;
-				margin: auto;
-				text-align: center;
-			}			
-			a {
-				color: #006633;
-			}
-		</style>
-	
-		
-		<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-	</head>
-	<body>
-<a href="itis3135/">Click to go to ITIS3135 Site</a>
-		<div id="page-wrapper">
-			<div id="header-wrapper">
-				<header>
-					<div id="header-container">
-						<div id="logo-wrapper">
-							<a href="http://www.uncc.edu">
-								<img src="https://images.dog.ceo/breeds/pariah-indian/The_Indian_Pariah_Dog.jpg" alt="Indian Pariah Dog">
-							</a>
-						</div> <!-- /#logo-wrapper -->
-					</div> <!-- /#header-container -->
-				</header>
-			</div> <!-- /#header-wrapper -->
-			<div id="content-wrapper">
-				<p>Your personal webpage has been created. For information on managing this site, review the <a href="http://hosting.uncc.edu/instructions">Personal Webpages</a> documentation.</p>
-			</div> <!-- /#content-wrapper -->
-		</div> <!-- /#page-wrapper -->
-	</body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zack Willis | IT and Security</title>
+<meta name="description" content="Zack Willis, Computer Science graduate in Charlotte, NC working in IT and ERP support and building toward a SOC analyst role.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --text: #14171c;
+  --muted: #5b6370;
+  --border: #e3e6eb;
+  --accent: #0f7b6c;
+  --accent-soft: #e3f3f0;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1014;
+    --surface: #151a20;
+    --text: #e8ebef;
+    --muted: #98a1ad;
+    --border: #252c35;
+    --accent: #3ccfb4;
+    --accent-soft: #14302b;
+  }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 16px;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+nav {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  z-index: 10;
+}
+nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 56px; }
+nav .brand { font-family: "JetBrains Mono", monospace; font-weight: 500; color: var(--text); }
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav ul a { color: var(--muted); font-size: 14px; }
+nav ul a:hover { color: var(--text); text-decoration: none; }
+header { padding: 80px 0 56px; }
+.tag {
+  display: inline-block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+h1 { font-size: clamp(34px, 6vw, 52px); line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 16px; }
+.lede { font-size: 19px; color: var(--muted); max-width: 620px; margin-bottom: 28px; }
+.buttons { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: var(--surface);
+}
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn:hover { text-decoration: none; opacity: 0.9; }
+section { padding: 48px 0; border-top: 1px solid var(--border); }
+h2 {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+.about p { margin-bottom: 14px; max-width: 680px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+.card h3 { font-size: 17px; margin-bottom: 8px; }
+.card p { color: var(--muted); font-size: 15px; margin-bottom: 12px; }
+.card .meta { font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--muted); }
+.status {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+.skills h3 { font-size: 15px; margin-bottom: 10px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  font-size: 13px;
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+}
+.timeline { display: grid; gap: 20px; }
+.job { display: grid; grid-template-columns: 160px 1fr; gap: 16px; }
+.job .when { font-family: "JetBrains Mono", monospace; font-size: 13px; color: var(--muted); padding-top: 2px; }
+.job h3 { font-size: 17px; }
+.job .org { color: var(--muted); font-size: 15px; margin-bottom: 6px; }
+.job ul { padding-left: 18px; color: var(--muted); font-size: 15px; }
+.certs { list-style: none; display: grid; gap: 10px; }
+.certs li { display: flex; justify-content: space-between; gap: 12px; padding: 12px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; }
+.certs .issuer { color: var(--muted); font-size: 14px; }
+footer { padding: 40px 0 60px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+@media (max-width: 600px) {
+  nav ul { gap: 14px; }
+  nav ul li.hide-sm { display: none; }
+  header { padding: 56px 0 40px; }
+  .job { grid-template-columns: 1fr; gap: 4px; }
+  .certs li { flex-direction: column; gap: 2px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#">zack@willis:~$</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li class="hide-sm"><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <span class="tag">Charlotte, NC &middot; Open to remote</span>
+    <h1>Zack Willis</h1>
+    <p class="lede">Computer Science graduate moving into IT and ERP support, building hands on security skills on the way to a SOC analyst role.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn" href="https://github.com/Zake272" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="mailto:zwillis272@gmail.com">Email me</a>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>I graduated from UNC Charlotte in 2025 with a B.S. in Computer Science and a minor in Criminal Justice. I'm moving into IT and ERP support, helping people get unstuck and keeping business systems running.</p>
+    <p>I've also spent years as an audio and video technician running live events, which taught me how to troubleshoot fast when something breaks in front of a crowd. I'm now studying for CompTIA Security+ and documenting the labs I build so I can show my work, not just list it.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Active Directory Home Lab <span class="status">in progress</span></h3>
+        <p>A Windows Server domain controller and Windows client built in VirtualBox, with users, groups, OUs, Group Policy, and logon auditing, documented step by step.</p>
+        <div class="meta">Windows Server &middot; AD DS &middot; GPO &middot; PowerShell</div>
+        <p style="margin-top:12px"><a href="https://github.com/Zake272/ad-home-lab" target="_blank" rel="noopener">View the writeup &rarr;</a></p>
+      </div>
+      <div class="card">
+        <h3>Python Log Analyzer</h3>
+        <p>Scans an SSH authentication log, counts failed logins by IP address and username, flags repeat offenders, and exports the results to CSV.</p>
+        <div class="meta">Python &middot; Log analysis &middot; CSV</div>
+        <p style="margin-top:12px"><a href="https://github.com/Zake272/python-log-analyzer" target="_blank" rel="noopener">View the code &rarr;</a></p>
+      </div>
+      <div class="card">
+        <h3>Web Coursework</h3>
+        <p>The site I built for ITIS 3135 at UNC Charlotte, covering HTML, CSS, and JavaScript fundamentals.</p>
+        <div class="meta">HTML &middot; CSS &middot; JavaScript</div>
+        <p style="margin-top:12px"><a href="itis3135/">Visit the site &rarr;</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>
+        <h3>Systems</h3>
+        <div class="chips">
+          <span class="chip">Active Directory</span>
+          <span class="chip">Windows</span>
+          <span class="chip">Linux CLI</span>
+          <span class="chip">Microsoft 365</span>
+          <span class="chip">ERP support</span>
+        </div>
+      </div>
+      <div>
+        <h3>Security</h3>
+        <div class="chips">
+          <span class="chip">Log analysis</span>
+          <span class="chip">Incident response basics</span>
+          <span class="chip">Risk assessment</span>
+          <span class="chip">Security+ prep</span>
+        </div>
+      </div>
+      <div>
+        <h3>Languages</h3>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">Java</span>
+          <span class="chip">C</span>
+          <span class="chip">SQL</span>
+          <span class="chip">HTML/CSS/JS</span>
+        </div>
+      </div>
+      <div>
+        <h3>Tools</h3>
+        <div class="chips">
+          <span class="chip">Git and GitHub</span>
+          <span class="chip">VirtualBox</span>
+          <span class="chip">Excel</span>
+          <span class="chip">MySQL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="job">
+        <div class="when">2021 &ndash; present</div>
+        <div>
+          <h3>Audio/Video Technician</h3>
+          <div class="org">Live Events Media Group &middot; Charlotte, NC</div>
+          <ul>
+            <li>Set up, operate, and troubleshoot audio and video systems for live events</li>
+            <li>Diagnose equipment and signal problems on the spot, with clients watching</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job">
+        <div class="when">Class of 2025</div>
+        <div>
+          <h3>B.S. Computer Science</h3>
+          <div class="org">UNC Charlotte &middot; Minor in Criminal Justice</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certs">
+  <div class="wrap">
+    <h2>Certifications</h2>
+    <ul class="certs">
+      <li><span>Administer Active Directory Domain Services</span><span class="issuer">Microsoft Applied Skills</span></li>
+      <li><span>Security+ <span class="status">in progress</span></span><span class="issuer">CompTIA</span></li>
+      <li><span>Responsive Web Design</span><span class="issuer">freeCodeCamp</span></li>
+      <li><span>JavaScript Algorithms and Data Structures</span><span class="issuer">freeCodeCamp</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <span>Zack Willis &middot; Charlotte, NC</span>
+    <span><a href="mailto:zwillis272@gmail.com">zwillis272@gmail.com</a> &middot; <a href="https://github.com/Zake272" target="_blank" rel="noopener">github.com/Zake272</a></span>
+  </div>
+</footer>
+
+</body>
 </html>
